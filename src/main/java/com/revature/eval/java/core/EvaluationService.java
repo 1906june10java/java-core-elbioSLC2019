@@ -15,6 +15,18 @@ public class EvaluationService {
 	 */
 	public String acronym(String phrase) {
 		// TODO Write an implementation for this method declaration
+		String sigla = null;
+		String[] splittedPhrase;
+		splittedPhrase = phrase.split(" ");
+	
+		int i = 0;
+		for (i = 0; i < (splittedPhrase.length); i++);
+			{
+				sigla = sigla.concat((splittedPhrase[i].substring(0,1).toUpperCase()));	
+				System.out.println("sigla when i is " + i);
+			}
+				
+		System.out.println(sigla);
 		return null;
 	}
 
@@ -29,6 +41,7 @@ public class EvaluationService {
 	 * point for E And to total:
 	 * 
 	 * 3 + 2*1 + 2*3 + 2 + 1 = 3 + 2 + 6 + 3 = 5 + 9 = 14
+	 * 
 	 * 
 	 * @param string
 	 * @return
